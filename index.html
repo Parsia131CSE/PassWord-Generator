@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./pGstylesheet.css">
+<script src="./pG.js"></script>
+</head>
+<body>
+    <div class="gen">
+        <div class="pGtitle">
+            <h1>Generate Your PassWord</h1>
+        </div>
+        <div class="passGen">
+            <div class="pGhead">                
+                    <div class="pw">
+                        <span id="pw"></span>
+                        <button id="copy">Copy</button>
+                    </div>               
+            </div>
+            <div class="pGbody">
+                <div class="formEl">
+                    <label for="pwln">Length</label>
+                    <input id="pwln" value="12" type="number" min="5" max="50" />
+                </div>
+                <div class="formEl">
+                    <input id="pwUpC" type="checkbox" />
+                    <label for="pwUpC">Add Uppercase Letters</label>
+                </div>
+                <div class="formEl">
+                    <input id="pwLoC" type="checkbox" />
+                    <label for="pwLoC">Add Lowercase Letters</label>               
+                </div>
+                <div class="formEl">
+                    <input id="pwNum" type="checkbox" />
+                    <label for="pwNum">Add any Numbers</label>
+                </div>
+                <div class="formEl">
+                    <input id="pwSym" type="checkbox" />
+                    <label for="pwSym">Add any Symbols</label>
+                </div>
+            </div>
+            <button class="generator">Generate password</button>
+        </div>
+    </div>
+</body>
+</html>
